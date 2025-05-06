@@ -14,6 +14,7 @@ option (ENABLE_DEMOSYNTH_PLUGIN    "Enable demo synthesizer plugin"             
 option (ENABLE_DEMORECOG_PLUGIN    "Enable demo recognizer plugin"                  ON)
 option (ENABLE_DEMOVERIFIER_PLUGIN "Enable demo verifier plugin"                    ON)
 option (ENABLE_RECORDER_PLUGIN     "Enable recorder plugin"                         ON)
+option (ENABLE_TREBERECOG_PLUGIN   "Enable Trebe recognizer plugin"                 ON)
 
 option (ENABLE_AMR_CODEC           "Enable AMR Codec"                               OFF)
 
@@ -121,6 +122,9 @@ add_subdirectory (plugins/demo-verifier)
 endif ()
 if (ENABLE_RECORDER_PLUGIN)
 add_subdirectory (plugins/mrcp-recorder)
+endif ()
+if (ENABLE_TREBERECOG_PLUGIN)
+add_subdirectory (plugins/trebe-recog)
 endif ()
 
 # Sub-projects: platform libraries

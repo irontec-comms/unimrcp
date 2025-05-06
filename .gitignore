@@ -289,6 +289,16 @@
 /plugins/Makefile.in
 /plugins/Makefile
 
+# /plugins/trebe-recog/
+/plugins/trebe-recog/Debug
+/plugins/trebe-recog/Release
+/plugins/trebe-recog/x64
+/plugins/trebe-recog/*.user
+/plugins/trebe-recog/.libs
+/plugins/trebe-recog/.deps
+/plugins/trebe-recog/Makefile.in
+/plugins/trebe-recog/Makefile
+
 # /plugins/demo-recog/
 /plugins/demo-recog/Debug
 /plugins/demo-recog/Release
