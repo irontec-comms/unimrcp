@@ -18,6 +18,10 @@ if RECORDER_PLUGIN
 SUBDIRS               += mrcp-recorder
 endif
 
+if TREBESYNTH_PLUGIN
+SUBDIRS               += trebe-synth
+endif
+
 if TREBERECOG_PLUGIN
 SUBDIRS               += trebe-recog
 endif

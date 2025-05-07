@@ -14,6 +14,7 @@ option (ENABLE_DEMOSYNTH_PLUGIN    "Enable demo synthesizer plugin"             
 option (ENABLE_DEMORECOG_PLUGIN    "Enable demo recognizer plugin"                  ON)
 option (ENABLE_DEMOVERIFIER_PLUGIN "Enable demo verifier plugin"                    ON)
 option (ENABLE_RECORDER_PLUGIN     "Enable recorder plugin"                         ON)
+option (ENABLE_TREBEYNTH_PLUGIN    "Enable Trebe synthesizer plugin"                ON)
 option (ENABLE_TREBERECOG_PLUGIN   "Enable Trebe recognizer plugin"                 ON)
 
 option (ENABLE_AMR_CODEC           "Enable AMR Codec"                               OFF)
@@ -60,7 +61,7 @@ endif ()
 # Shared modules (plug-ins) should not have any prefix set
 set (CMAKE_SHARED_MODULE_PREFIX "")
 
-# Pertain RPATH upon installation 
+# Pertain RPATH upon installation
 set (CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 # Add library directory to RPATH
@@ -122,6 +123,9 @@ add_subdirectory (plugins/demo-verifier)
 endif ()
 if (ENABLE_RECORDER_PLUGIN)
 add_subdirectory (plugins/mrcp-recorder)
+endif ()
+if (ENABLE_TREBESYNTH_PLUGIN)
+add_subdirectory (plugins/trebe-synth)
 endif ()
 if (ENABLE_TREBERECOG_PLUGIN)
 add_subdirectory (plugins/trebe-recog)

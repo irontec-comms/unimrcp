@@ -197,6 +197,11 @@ UNI_PLUGIN_ENABLED(demorecog)
 
 AM_CONDITIONAL([DEMORECOG_PLUGIN],[test "${enable_demorecog_plugin}" = "yes"])
 
+dnl Trebe synthesizer plugin.
+UNI_PLUGIN_ENABLED(trebesynth)
+
+AM_CONDITIONAL([TREBESYNTH_PLUGIN],[test "${enable_trebesynth_plugin}" = "yes"])
+
 dnl Trebe recognizer plugin.
 UNI_PLUGIN_ENABLED(treberecog)
 
@@ -242,6 +247,7 @@ AC_CONFIG_FILES([
     plugins/demo-synth/Makefile
     plugins/demo-recog/Makefile
     plugins/demo-verifier/Makefile
+    plugins/trebe-synth/Makefile
     plugins/trebe-recog/Makefile
     platforms/Makefile
     platforms/libunimrcp-server/Makefile
@@ -300,6 +306,7 @@ echo Demo synthesizer plugin....... : $enable_demosynth_plugin
 echo Demo recognizer plugin........ : $enable_demorecog_plugin
 echo Demo verifier plugin.......... : $enable_demoverifier_plugin
 echo Recorder plugin............... : $enable_recorder_plugin
+echo Trebe synthesizer plugin...... : $enable_trebesynth_plugin
 echo Trebe recognizer plugin....... : $enable_treberecog_plugin
 echo
 echo Installation layout........... : $layout_name

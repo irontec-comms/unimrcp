@@ -309,6 +309,16 @@
 /plugins/demo-recog/Makefile.in
 /plugins/demo-recog/Makefile
 
+# /plugins/trebe-synth/
+ /plugins/trebe-synth/Debug
+ /plugins/trebe-synth/Release
+ /plugins/trebe-synth/x64
+ /plugins/trebe-synth/*.user
+ /plugins/trebe-synth/.libs
+ /plugins/trebe-synth/.deps
+ /plugins/trebe-synth/Makefile.in
+ /plugins/trebe-synth/Makefile
+
 # /plugins/demo-synth/
 /plugins/demo-synth/Debug
 /plugins/demo-synth/Release
